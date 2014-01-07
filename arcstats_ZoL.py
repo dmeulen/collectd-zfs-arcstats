@@ -61,7 +61,7 @@ class ARCstats(object):
             return
 
         for n, v in kstat.items():
-            self.dispatch_value('zfs', 'arc', n, v)
+            self.dispatch_value('zfs', 'counter', n, v)
 
 
 arc = ARCstats()
